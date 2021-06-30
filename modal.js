@@ -1,5 +1,5 @@
 import { toggle, todos, updateLocalStorage } from './utils.js'
-import { render } from './index.js'
+import { render } from './card.js';
 import { Card } from './card.js';
 
 export const initModal = () => document.querySelector('.modal').addEventListener('click', e => {

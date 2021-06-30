@@ -1,5 +1,5 @@
 import { toggle, todos, updateLocalStorage } from "./utils.js"
-import { render } from "./index.js"
+import { render } from './card.js';
 
 export const initController = () => document.querySelector('#app-controller').addEventListener('click', e => {
     if(e.target.classList.contains('btn-modal')) {

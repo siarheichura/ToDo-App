@@ -1,7 +1,5 @@
-import { toggle } from "./utils.js"
+import { toggle, todos, updateLocalStorage } from "./utils.js"
 import { render } from "./index.js"
-import { todos } from "./index.js"
-import { updateLocalStorage } from "./utils.js"
 
 export const initController = () => document.querySelector('#app-controller').addEventListener('click', e => {
     if(e.target.classList.contains('btn-modal')) {

@@ -1,8 +1,6 @@
-import { toggle } from './utils.js'
+import { toggle, todos, updateLocalStorage } from './utils.js'
 import { render } from './index.js'
 import { Card } from './card.js';
-import { todos } from './index.js';
-import { updateLocalStorage } from './utils.js';
 
 export const initModal = () => document.querySelector('.modal').addEventListener('click', e => {
     if(e.target.classList.contains('modal-close')) {

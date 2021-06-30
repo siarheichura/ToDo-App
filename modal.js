@@ -10,5 +10,7 @@ export const initModal = () => document.querySelector('.modal').addEventListener
         todos.push(new Card(document.querySelector('.input-title').value, document.querySelector('.input-description').value))
         updateLocalStorage()
         render()
+        document.querySelector('.input-title').value = ''
+        document.querySelector('.input-description').value = ''
     }
 })

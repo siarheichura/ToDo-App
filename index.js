@@ -87,6 +87,7 @@ function setTodosMaxValue() {
 
 function initToast(title, text) {
     initToastListeners()
+    setToastTimeout()
     $('.toast-title').innerText = title 
     $('.toast-body').innerText = text
     $('.toasts').classList.remove('d-none')
@@ -100,4 +101,11 @@ function initToastListeners() {
             $('.toasts').classList.add('d-none')  
         }
     })
+}
+
+function setToastTimeout() {
+    setTimeout(() => {
+        $('.toasts').classList.remove('d-block')
+        $('.toasts').classList.add('d-none') 
+    }, 3000);
 }
